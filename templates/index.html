@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amenify Support Bot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Left Sidebar for History -->
+        <div class="sidebar">
+            <h2>Chat History</h2>
+            <div id="history-box" class="history-box">
+                <!-- History items will appear here -->
+            </div>
+        </div>
+
+        <!-- Right Main Chat Area -->
+        <div class="chat-container">
+            <div class="chat-header">
+                <h2>Amenify Support Bot</h2>
+                <p>Ask me about Amenify services!</p>
+            </div>
+
+            <div id="chat-box" class="chat-box">
+                <div class="message bot-message">Hello! How can I help you with Amenify today?</div>
+            </div>
+
+            <div class="typing-indicator" id="typing-indicator" style="display: none;">
+                Bot is typing<span>.</span><span>.</span><span>.</span>
+            </div>
+
+            <div class="input-area">
+                <input type="text" id="user-input" placeholder="Type your message here..." autocomplete="off">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
