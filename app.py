@@ -18,7 +18,6 @@ MANDATORY_KEYWORDS = {"amenify", "service", "services", "cleaning", "booking", "
 
 def process_text(text):
     words = re.findall(r'\b\w+\b', text.lower())
-    # Remove stopwords
     return set([w for w in words if w not in STOPWORDS])
 
 def get_answer(user_query):
