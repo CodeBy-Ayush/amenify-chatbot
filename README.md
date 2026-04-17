@@ -1,6 +1,6 @@
 # Amenify Customer Support Bot
 
-## 🚀 Overview
+# 🚀 Overview
 
 This project is a **Strict Retrieval-Based Customer Support Chatbot** built for Amenify.
 
