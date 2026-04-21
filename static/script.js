@@ -3,7 +3,6 @@ const userInput = document.getElementById("user-input");
 const typingIndicator = document.getElementById("typing-indicator");
 const historyBox = document.getElementById("history-box");
 
-// Press Enter to send
 userInput.addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
         sendMessage();
